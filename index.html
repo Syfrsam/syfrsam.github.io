@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Teh Segar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 4.7 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        /* Custom Animations */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .product-image {
+            transition: transform 0.3s ease;
+        }
+        .product-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section with Transparent Background Image */
+        .hero {
+            background-image: url('img/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-green-50 to-white">
+
+    <!-- Navbar -->
+    <nav class="bg-transparent py-6 absolute w-full z-10">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo using Font Awesome -->
+            <a href="#" class="text-3xl font-bold text-white flex items-center">
+                <i class="fa fa-coffee mr-2 text-green-500"></i> <!-- Icon for Es Teh Segar -->
+                Es Teh Segar
+            </a>
+            <a href="#order" class="bg-green-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-green-400 transition">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-40">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('img/bg.png');"></div>
+        <div class="container relative mx-auto px-6 text-center fade-in">
+            <h1 class="text-6xl font-extrabold text-white">Rasakan Kesegaran Sejati</h1>
+            <p class="mt-6 text-xl text-white">Teh segar yang diolah dengan bahan alami terbaik untuk memulai hari yang sempurna. Setiap tegukan memberi Anda kesejukan dan kenikmatan yang tidak terlupakan.</p>
+            <a href="#order" class="mt-8 inline-block bg-white text-green-500 py-4 px-8 rounded-full text-lg font-bold hover:bg-gray-200 transition">Order Sekarang</a>
+        </div>
+    </section>
+
+
+
+    <!-- Product Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Varian Rasa Favorit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                    <img src="img/estehori.png" alt="Es Teh Original" class="w-full mb-6 rounded-lg product-image">
+                    <h3 class="text-2xl font-semibold text-gray-800">Es Teh Original</h3>
+                    <p class="text-gray-600 mt-2">Kesegaran teh asli yang sempurna untuk kapan saja.</p>
+                    <p class="text-lg font-bold text-green-500 mt-4">Rp 5.000</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                    <img src="img/estehlemon.png" alt="Es Teh Lemon" class="w-full mb-6 rounded-lg product-image">
+                    <h3 class="text-2xl font-semibold text-gray-800">Es Teh Lemon</h3>
+                    <p class="text-gray-600 mt-2">Kesegaran teh dengan perpaduan lemon yang segar.</p>
+                    <p class="text-lg font-bold text-green-500 mt-4">Rp 7.000</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                    <img src="img/madu.png" alt="Es Teh Madu" class="w-full mb-6 rounded-lg product-image">
+                    <h3 class="text-2xl font-semibold text-gray-800">Es Teh Madu</h3>
+                    <p class="text-gray-600 mt-2">Rasa manis alami dengan teh yang dipadu madu berkualitas.</p>
+                    <p class="text-lg font-bold text-green-500 mt-4">Rp 8.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bg-green-100 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Kenapa Memilih Es Teh Kami?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-leaf text-green-500 text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-gray-800">Bahan Berkualitas</h3>
+                    <p class="text-gray-600 mt-2">Menggunakan teh premium yang dijamin kesegarannya.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-tags text-green-500 text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-gray-800">Harga Terjangkau</h3>
+                    <p class="text-gray-600 mt-2">Nikmati rasa yang enak tanpa harus merogoh kocek dalam.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-lemon-o text-green-500 text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-gray-800">Varian Rasa Unik</h3>
+                    <p class="text-gray-600 mt-2">Tersedia berbagai rasa inovatif yang tidak ditemukan di tempat lain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="order" class="py-20 bg-gradient-to-r from-green-200 to-green-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Pesan Sekarang</h2>
+            <form action="#" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Nama</label>
+                    <input type="text" class="w-full mt-2 p-2 border rounded-lg focus:ring-2 focus:ring-green-500" placeholder="Nama Anda">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Nomor Telepon</label>
+                    <input type="text" class="w-full mt-2 p-2 border rounded-lg focus:ring-2 focus:ring-green-500" placeholder="Nomor Telepon Anda">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Pesanan</label>
+                    <textarea class="w-full mt-2 p-2 border rounded-lg focus:ring-2 focus:ring-green-500" rows="4" placeholder="Tulis pesanan Anda"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-400 transition">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Lokasi Kami</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Google Maps Embed Code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25109.773208605462!2d110.36862972647969!3d-7.043937382594683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705f2874d3c5e9%3A0xe06e7b9e524aa9b6!2sDemak%2C%20Kabupaten%20Demak%2C%20Jawa%20Tengah!5e0!3m2!1sen!2sid!4v1693490646685!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto text-center text-white">
+            <p>© 2024 Es Teh Segar. All rights reserved.</p>
+            <a href="#" class="text-green-500 hover:underline">Instagram</a> | 
+            <a href="#" class="text-green-500 hover:underline">Facebook</a> | 
+            <a href="#" class="text-green-500 hover:underline">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>
